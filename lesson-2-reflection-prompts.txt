@@ -41,3 +41,25 @@ the diagram the way we do?
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	Git's automatic merging would warn you conflict if there's diff of one line in the commits you want to merge. To resolve the conflict, you can check the file in which the conflict part is now marked by git: 
+	
+	<<<<<<<HEAD
+	(The code in the checkout branch)
+	|||||||| merged common ancestors
+	(The code of 2 branches' common ancestor)
+	=======
+	(the code of the master branch)
+	>>>>>>> master  
+
+	Check the code change and determine to use a certain version of the code. Modify the code and save the file. 
+	Check (git status): 
+	On branch easy-mode
+	You have unmerged paths.
+  	(fix conflicts and run "git commit")
+  	(use "git merge --abort" to abort the merge)
+
+	Unmerged paths:
+  	(use "git add <file>..." to mark resolution)
+        both modified:   game.js
+ 	
+ 	(git add) (git commit) to submit the merged commit
