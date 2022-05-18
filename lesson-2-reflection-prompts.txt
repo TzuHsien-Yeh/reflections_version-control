@@ -1,14 +1,21 @@
 What happens when you initialize a repository? Why do you need to do it?
+	(git init) It creates a new git repository. 
+	(ls -a)  A git directory will be created in the directory of the files. 
+
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-
-Staging area provides a space to compile what the commit you want to submit at a time.
-working directory is the place stores the actual repository.
+	Staging area provides a space to compile what the commit you want to submit at a time.
+	Working directory is the place stores the actual repository.
 
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+	Store only files with certain logical change to be committed in a repository to the staging area. 
+	(git commit) those files with the logical change at a time. 
+	(git add) the other logical change to the staging area and commit it again. 
+	(git reset) to remove the file from staging area. 
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
