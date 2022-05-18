@@ -33,6 +33,11 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	To merge a branch into the master branch: (git checkout master) to make sure you are at the master branch.
+	(git merge master anotherBranch) checks the edition of the two branches against the original commit (where a new branch is created), and create a new commit. In the diagram, we can track every commit in the two branches from the new commit of the merged two branches. 
+	(git merge --abort) to abort the merge and go back to the status before merge happens.
+	If a branch is merged to the master branch, we can remove the label of the branch by (git branch -d nameOfTheBranch). Note that this wouldn't delete the commits in that branch. 
+
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
