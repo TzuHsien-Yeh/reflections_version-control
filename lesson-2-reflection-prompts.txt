@@ -19,6 +19,12 @@ change?
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	When try to develop new features while having the current latest version available to be used/reviewed. 
+	Once the new features could work properly, this branch can be merged with the master branch that has gone on for a few commits.
+	Usually: master branch to be open to the public, other branches to experiment or adding new features that are not yet quality-checked.
+
+	Another usage of branch is to develop different version or special version. (e.g., easy mode, area-customed) 
+
 
 How do the diagrams help you visualize the branch structure?
 
