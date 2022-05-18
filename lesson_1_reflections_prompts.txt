@@ -1,0 +1,41 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    In windows, open the command prompt and type in cd Downloads and the directory of the files to be compared. 
+Then, type "FC," which stands for "file compare," and the two files' name. The diff will thus be shown.
+ 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Easier to check the renewed part. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    some files are related to each others
+
+How can you use the commands git log and git diff to view the history of files?
+
+      1. after clone the repository, type "git log" to view the log (press enter to get more collapsed info). 
+	2. enter "q" to exit. 
+	3. run the command "git config --global color.ui auto" to make the deletions red and the insertions green.
+	4. type "git diff (first_commit_id) (second_commit_id)" to check the differences from the previous versions.
+	
+ 
+How might using version control make you more confident to make changes that
+could break something?
+
+    If the new commit includes any bugs, you can use "git checkout (commit id)" to run that version of code. 
+if a bug starts from a certain version, you can use "git diff (with_bug_commit_id) (without_bug_commit_id)" to find out the bug.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
