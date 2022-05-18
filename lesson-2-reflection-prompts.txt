@@ -28,6 +28,7 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 	A diagram illustrates the parent of every commits in different branches, showing from which commit did you start a new branch. 
+	It helps keep tracks of which branches contain which commits. 
 
 
 What is the result of merging two branches together? Why do we represent it in
