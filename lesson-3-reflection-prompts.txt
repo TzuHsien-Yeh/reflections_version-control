@@ -19,13 +19,18 @@ use one instead of another?
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
+    You can update the change from GitHub (by other collaborators/devices) to the remote stored locally (origin/master) on your device. In case a new commit hasn't been pushed with a new commit on GitHub repository different from it. You can fetch the new commit from GitHub repository to (origin/master) and compare/merge with the local (master). 
+    Fix the conflict in the file. Commit and push the merged commit to update the GitHub repository.
 
-    Fill in your answer here
+    (git fetch) + (git merge origin/master master) here = (git pull)
+
+
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
+    Without using Git/GitHub, I would send the file I've made changes on it to my collaborators and wait for their reviews. Once they approve to accept the changes, I would update the file to be our latest version. 
+    It would be harder for us to check the certain part of the file that has been changed. 
 
-    Fill in your answer here
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
